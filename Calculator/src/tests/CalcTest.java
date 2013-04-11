@@ -1,6 +1,7 @@
 package tests;
 
 import static org.junit.Assert.*;
+import ie.gcd.maths.Calc;
 
 import org.junit.After;
 import org.junit.Before;
@@ -18,7 +19,9 @@ public class CalcTest {
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		
+		Calc c=new Calc();
+		assertEquals(5,c.add(2, 3));
 	}
 
 }
